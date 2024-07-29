@@ -1,9 +1,21 @@
 /*Global stylesheet*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&family=Ysabeau+SC:wght@1..1000&display=swap');
+
 body,
 html {
 	margin: 0;
 	padding: 0;
+	background-color: #fcf9ec;
+}
+
+* {
+	font-family: "Ysabeau SC", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 #nav {
@@ -73,4 +85,36 @@ html {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#main-left {
+	float: left;
+	height: 100%;
+	display: inline;
+}
+
+#main-right {
+	display: inline;
+	height: 100%;
+	float: right;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2 {
+	font-family: "Poetsen One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#main-img {
+	border-radius: 50%;
+
 }
