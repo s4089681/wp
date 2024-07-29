@@ -4,20 +4,25 @@
 		<title>Pets Victoria</title>
 		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
 		<link rel="stylesheet" type="" href="../css/style.css">
+		<script src="../js/main.js" defer></script>
 	</head>
 	<body>
 		<header id="hd">
 			<nav id="nav">
-				<div>
-					<span class="nav-item"><img id="logo" src="../images/logo.png" alt=""></span>
-					<span class="nav-item"><select>
-					<option value="" disabled selected>Select an Option...</option>
-					</select></span>
-				</div>
-				<div>
-					<span class="nav-item"><input type="search" name="" value="search"></span>
-					<span class="nav-item"><button type=""></button></span>	
-				</div>
+				<span id="hd-left">
+					<span class="nav-span"><img id="logo" src="../images/logo.png" alt=""></span>
+					<span class="nav-span">
+						<select id="select-nav" class="nav-item">
+							<option value="" disabled selected>Select an Option...</option>
+							<option value="test"></option>
+							<option value="test2"></option>
+						</select>
+					</span>
+				</span>
+				<span id="hd-right">
+					<span class="nav-span" id="hd-search"><input id="search-nav" class="nav-item" type="search" name="" value="search"></span>
+					<span class="nav-span"><button id="search-nav-btn"class="nav-item" type=""></button></span>	
+				</span>
 			</nav>
 		</header>
 		<main>
@@ -25,8 +30,8 @@
 			<h2>WELCOME TO PET ADOPTION</h2>
 			<img src="../images/main.jpg" alt="">
 		</main>
-		<footer>
-			<p>Copyright s4089681. All Rights Reserved | Designed for Petes Victoria</p>
+		<footer id="ft">
+			<span class="ft-item"><p>Copyright s4089681. All Rights Reserved | Designed for Pets Victoria</p></span>
 		</footer>
 	</body>
 </html>
