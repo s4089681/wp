@@ -1,4 +1,4 @@
-var sel = document.getElementById("select-nav");
+var sel = document.getElementById("nav-select");
 
 sel.onchange = () => {
 	switch (sel.value) {
