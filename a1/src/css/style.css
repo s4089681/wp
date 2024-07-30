@@ -101,20 +101,3 @@ html {
 	display: flex;
 	flex-direction: column;
 }
-
-h1 {
-	font-family: "Permanent Marker", cursive;
-	font-weight: 400;
-	font-style: normal;
-}
-
-h2 {
-	font-family: "Poetsen One", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-#main-img {
-	border-radius: 50%;
-
-}
