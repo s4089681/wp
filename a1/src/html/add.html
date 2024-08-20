@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Add</title>
-	</head>
-	<body>
-		<main>
-			<form>
-			<label for="name"></label>
-			<input type="text" name="pname" value="" palceholder="Provide a name for the pet">
+<html>
 
-			<label for="">Type:</label>
-			<select>
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
-			</select>
+<head>
+	<title>Pets Victoria</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<link rel="stylesheet" type="" href="../css/style.css">
+	<script src="../js/main.js" defer></script>
+</head>
 
-			<label for="">Description</label>
-			<input type="text" name="" value="" placeholder="Describe the pet briefly">
+<body>
+	<header id="hd">
+		<nav id="nav">
+			<span id="nav-left">
+				<span class="nav-span"><img id="logo" src="../images/logo.png" alt=""></span>
+				<span class="nav-span">
+					<select id="nav-select" class="nav-item">
+						<option value="Home" selected>Home</option>
+						<option value="Pets">Pets</option>
+						<option value="Add More" selected>Add More</option>
+						<option value="Gallery">Gallery</option>
+					</select>
+				</span>
+			</span>
+			<span id="nav-right">
+				<span class="nav-span" id="hd-search"><input id="search-nav" class="nav-item" type="search" name=""
+						value="search"></span>
+				<span class="nav-span"><button id="search-nav-btn" class="nav-item" type=""></button></span>
+			</span>
+		</nav>
+	</header>
+	<main id="main">
+		<div id="content">
 
-			<label for="image">Select and image:</label>
-			<input type="file" name="" accept"image/*">
 
-			<label for="">Image Caption</label>
-			<input type="text" name="" value="" placeholder="describe the image in one word">
-			
-			<label for="">Age (months)</label>
-			<input type="text" name="" value="" placeholder="Age of a pet in months">
+		</div>
+	</main>
+	<footer id="ft">
+		<span class="ft-item">
+			<p>Copyright s4089681 H. Black | All Rights Reserved | Designed for Pets Victoria</p>
+		</span>
+	</footer>
+</body>
 
-			<label for="">Location</label>
-			<input type="text" name="" value="" placeholder="Location">
-		</form>
-		</main>
-	</body>
 </html>
