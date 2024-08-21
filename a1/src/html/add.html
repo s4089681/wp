@@ -5,6 +5,7 @@
 	<title>Pets Victoria</title>
 	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
 	<link rel="stylesheet" type="" href="../css/style.css">
+	<link rel="stylesheet" type="" href="../css/add.css">
 	<script src="../js/main.js" defer></script>
 </head>
 
@@ -32,6 +33,35 @@
 	<main id="main">
 		<div id="content">
 
+			<div id="heading">
+				<h2>Add a pet</h2>
+				<p>You can add a new pet here</p>
+			</div>
+
+			<form id="addPetForm">
+				<label for="petName">Pet Name:</label>
+				<input type="text" id="petName" name="petName" value="" placeholder="Provide a name for the pet" required>
+				<label for="petType">Type:</label>
+				<select id="petType">
+					<option value="" disabled selected>--Choose an option--</option>
+					<option value=""></option>
+				</select>
+				<label id="selectImageLabel" for="petImage">Select An Image</label>
+				<input type="file" id="petImage" name="petImage" value="">
+				<label for="petImageCaption">Image Caption:</label>
+				<input type="text" id="petImageCaption" name="petImageCaption" value=""
+					placeholder="describe the image in one word">
+				<label for="petAge">Age (months):</label>
+				<input type="text" id="petAge" name="petAge" value="" placeholder="Age of a pet in months">
+				<label for="petLocation">Location:</label>
+				<input type="text" id="petLocation" name="petLocation" value="" placeholder="Location of the pet">
+
+				<div>
+					<button type="submit"><img src="" alt="">submit</button>
+					<button type="reset"><img src="" alt="">clear</button>
+
+				</div>
+			</form>
 
 		</div>
 	</main>
