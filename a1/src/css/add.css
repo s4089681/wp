@@ -1,0 +1,35 @@
+#content{
+	width: 1200px;
+}
+#heading {
+	text-align: center;
+}
+
+#addPetForm > label {
+	width: 1200px;
+}
+
+#selectImageLabel {
+	width: 100px;
+	display: inline;
+}
+
+#petType {
+	display: block;
+}
+
+#addPetForm > label:after {
+	content:" *";
+	color: red;
+}
+
+
+#addPetForm > input {
+	width: 1200px;
+	height: 30px;
+}
+
+#main {
+	flex-flow: row;
+	justify-content: center;
+}

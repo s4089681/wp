@@ -80,9 +80,7 @@ body {
 #content {
 	height: 100%;
 	width: 100%;
-	display: flex;
-	flex-flow: row ;
-	justify-content: center;
+
 }
 
 #ft {
