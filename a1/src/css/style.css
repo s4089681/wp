@@ -76,14 +76,18 @@ body {
 }
 
 #main {
-	flex: 1 1 auto;
 	width: 100%;
 	display: flex;
+	flex-flow: row;
+	justify-content: center;
 }
 
 #content {
 	height: 100%;
-	width: 100%;
+	width: 1200px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 
 }
 
@@ -102,4 +106,40 @@ body {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#indexTitle,
+#indexTitleImgContainer {
+	display: inline-block;
+	width: 600px;
+}
+
+#indexTitleImgContainer {
+	float: right;
+}
+
+#indexTitleImg {
+	border-radius: 50%;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+#indexTitle>h1 {
+
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 70px;
+	color: #e57f3d;
+}
+
+#indexTitle>h2 {
+	font-family: "Poetsen One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 70px;
+	overlay: visible;
+	color: #008080;
+	text-wrap: wrap;
+
 }
