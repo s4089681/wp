@@ -57,8 +57,11 @@ body {
 	justify-content: center;
 }
 
-#search-nav-btn {
+#nav-search {
 	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin-left: 5px;
 }
 
 #nav-select {
@@ -77,6 +80,7 @@ body {
 	width: 100%;
 	display: flex;
 }
+
 #content {
 	height: 100%;
 	width: 100%;
@@ -99,4 +103,3 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
