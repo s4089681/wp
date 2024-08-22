@@ -108,6 +108,8 @@ body {
 	justify-content: center;
 }
 
+/* @INFO index.html styling */
+
 #indexTitle,
 #indexTitleImgContainer {
 	display: inline-block;
@@ -142,4 +144,54 @@ body {
 	color: #008080;
 	text-wrap: wrap;
 
+}
+
+
+/* pets.html styling */
+
+#petTable {
+	display: inline-block;
+	border: 1px solid #000;
+	width: 600px;
+	table-layout: fixed;
+}
+
+#imgTable {
+	width: 1200px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+#petTable>tbody>tr>th {
+	background-color: #fcf9ec;
+	color: #008080;
+}
+
+#petTable>tbody>tr>#pet {
+	width: 150px;
+}
+
+#petTable>tbody>tr>#type {
+	width: 75px;
+}
+
+#petTable>tbody>tr>#age {
+	width: 125px;
+}
+
+#petTable>tbody>tr>#location {
+	width: 250px;
+}
+
+#petImage {
+	display: inline-block;
+}
+
+#petsHeading>h1 {
+	font-weight: bold;
+}
+
+#petsHeading>* {
+	text-align: center;
 }
