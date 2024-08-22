@@ -27,12 +27,15 @@ body {
 #hd {
 	background-color: #008080;
 	width: 100%;
-	flex: 0 1 auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
 }
 
 #nav {
 	padding-left: 25px;
 	padding-right: 25px;
+	width: 1200px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
