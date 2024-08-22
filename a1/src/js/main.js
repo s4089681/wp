@@ -1,5 +1,9 @@
 var sel = document.getElementById("nav-select");
 
+document.getElementById("logo").onclick = () => {
+	window.location.href = "../html/index.html"
+}
+
 sel.onchange = () => {
 	switch (sel.value) {
 		case "Home":
@@ -20,4 +24,4 @@ sel.onchange = () => {
 
 
 document.getElementById("search-nav").onchange = () => { console.log("search-nav changed") }
-document.getElementById("search-nav-btn").onclick = () => { console.log("search-nav-btn clicked") }
+document.getElementById("nav-search").onclick = () => { console.log("search-nav-btn clicked") }
