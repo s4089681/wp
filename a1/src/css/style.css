@@ -195,3 +195,65 @@ body {
 #petsHeading>* {
 	text-align: center;
 }
+
+/* add.html styling */
+
+#addPetForm>label,
+#addPetForm>select {
+	width: 1200px;
+}
+
+#addHeading {
+	text-align: center;
+}
+
+#selectImageLabel {
+	width: 100px;
+	display: inline;
+}
+
+#petType {
+	display: block;
+}
+
+#addPetForm>label:after {
+	content: " *";
+	color: red;
+}
+
+#addPetForm>#addPetFormBtn {
+	display: flex;
+	justify-content: center;
+	width: 1200px;
+}
+
+#submitBtn {
+	background: #008080;
+	color: white;
+	border: 1px solid #008080;
+	display: inline-block;
+}
+
+#clearBtn {
+	color: #008080;
+	border: 1px solid #008080
+}
+
+#addPetFormBtn>button>img {
+	height: 24px;
+	width: 24px;
+	vertical-align: middle;
+}
+
+#addPetForm>#addPetFormBtn>button {
+	width: 135px;
+	height: 40px;
+	margin: 10px 10px 10px 5px;
+	border-radius: 50px;
+	font-size: 16px;
+}
+
+#addPetForm>input {
+	width: 1200px;
+	height: 30px;
+}
