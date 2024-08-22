@@ -257,3 +257,81 @@ body {
 	width: 1200px;
 	height: 30px;
 }
+
+/* gallery.html styling */
+
+#galleryHeading {
+	width: 1200px;
+	text-align: center;
+}
+
+#galleryHeading>h2 {
+	font-weight: bold;
+}
+
+#gallery {
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.petThumb {
+	margin: 10px 10px 10px 10px;
+	width: 360px;
+	height: 280px;
+	border: 1px solid black;
+	border-radius: 25px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.petThumbName {
+	margin: 0px 0px 5px 0px;
+}
+
+.petThumb:hover {
+	opacity: 50%;
+}
+
+.petThumb>div>img {
+	width: 360px;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+.petThumb>p {
+	text-align: center;
+	font-weight: bold;
+	height: 25px;
+}
+
+.petThumbImgContainer {
+	height: 250px;
+	width: 360px;
+}
+
+.petThumbRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.petThumbHover {
+	width: 360px;
+	height: 300px;
+	position: absolute;
+	color: black;
+	opacity: 100%;
+	top: 130px;
+	left: 0px;
+	display: none;
+	z-index: 1;
+	justify-content: center;
+	font-size: 25px;
+}
+
+.petThumb:hover .petThumbHover {
+	display: flex;
+}
