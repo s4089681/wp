@@ -24,6 +24,7 @@
 .petThumb {
 	margin: 10px 10px 10px 10px;
 	width: 360px;
+	height: 280px;
 	border: 1px solid black;
 	border-radius: 25px;
 	display: inline-block;
@@ -31,11 +32,15 @@
 	z-index: 2;
 }
 
+.petThumbName {
+	margin: 0px 0px 5px 0px;
+}
+
 .petThumb:hover {
 	opacity: 50%;
 }
 
-.petThumb>img {
+.petThumb>div>img {
 	width: 360px;
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
@@ -44,6 +49,12 @@
 .petThumb>p {
 	text-align: center;
 	font-weight: bold;
+	height: 25px;
+}
+
+.petThumbImgContainer {
+	height: 250px;
+	width: 360px;
 }
 
 .petThumbRow {
