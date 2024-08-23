@@ -1,4 +1,4 @@
-/*Global stylesheet*/
+/* global styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&display=swap');
@@ -111,6 +111,28 @@ body {
 	justify-content: center;
 }
 
+
+.ysabeau {
+	font-family: "Ysabeau", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.poetsen {
+	font-family: "Poetsen One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.marker {
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
 /* @INFO index.html styling */
 
 #indexTitle,
@@ -130,18 +152,11 @@ body {
 }
 
 #indexTitle>h1 {
-
-	font-family: "Permanent Marker", cursive;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 70px;
 	color: #e57f3d;
 }
 
 #indexTitle>h2 {
-	font-family: "Poetsen One", sans-serif;
-	font-weight: 400;
-	font-style: normal;
 	font-size: 70px;
 	overlay: visible;
 	color: #008080;
