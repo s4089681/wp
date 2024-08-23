@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<title>Pets Victoria</title>
+	<meta charset="utf-8">
 	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
-	<link rel="stylesheet" type="" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<script src="../js/main.js" defer></script>
 </head>
 
@@ -15,7 +16,7 @@
 				<span class="nav-span"><img id="logo" src="../images/logo.png" alt=""></span>
 				<span class="nav-span">
 					<select id="nav-select" class="nav-item">
-						<option value="Home" selected>Home</option>
+						<option value="Home">Home</option>
 						<option value="Pets">Pets</option>
 						<option value="Add More" selected>Add More</option>
 						<option value="Gallery">Gallery</option>
@@ -23,10 +24,10 @@
 				</span>
 			</span>
 			<span id="nav-right">
-				<span class="nav-span" id="hd-search"><input id="search-nav" class="nav-item" type="search" name=""
+				<span class="nav-span" id="hd-search"><input id="search-nav" class="nav-item" type="search"
 						value="search"></span>
 				<span class="nav-span"><img id="nav-search" class="nav-item"
-						src="../images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button></span>
+						src="../images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
 			</span>
 		</nav>
 	</header>
@@ -40,21 +41,19 @@
 
 			<form id="addPetForm">
 				<label for="petName">Pet Name:</label>
-				<input type="text" id="petName" name="petName" value="" placeholder="Provide a name for the pet" required>
+				<input type="text" id="petName" name="petName" placeholder="Provide a name for the pet" required>
 				<label for="petType">Type:</label>
 				<select id="petType">
-					<option value="" disabled selected>--Choose an option--</option>
-					<option value=""></option>
+					<option disabled selected>--Choose an option--</option>
 				</select>
 				<label id="selectImageLabel" for="petImage">Select An Image</label>
-				<input type="file" id="petImage" name="petImage" value="">
+				<input type="file" id="petImage" name="petImage">
 				<label for="petImageCaption">Image Caption:</label>
-				<input type="text" id="petImageCaption" name="petImageCaption" value=""
-					placeholder="describe the image in one word">
+				<input type="text" id="petImageCaption" name="petImageCaption" placeholder="describe the image in one word">
 				<label for="petAge">Age (months):</label>
-				<input type="text" id="petAge" name="petAge" value="" placeholder="Age of a pet in months">
+				<input type="text" id="petAge" name="petAge" placeholder="Age of a pet in months">
 				<label for="petLocation">Location:</label>
-				<input type="text" id="petLocation" name="petLocation" value="" placeholder="Location of the pet">
+				<input type="text" id="petLocation" name="petLocation" placeholder="Location of the pet">
 
 				<div id="addPetFormBtn">
 					<button id="submitBtn" type="submit"><img src="../images/done_all_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
@@ -69,7 +68,7 @@
 	</main>
 	<footer id="ft">
 		<span class="ft-item">
-			<p>Copyright s4089681 H. Black | All Rights Reserved | Designed for Pets Victoria</p>
+			Copyright s4089681 H. Black | All Rights Reserved | Designed for Pets Victoria
 		</span>
 	</footer>
 </body>
