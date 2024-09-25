@@ -1,0 +1,15 @@
+#insertForm {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	width: 500px;
+	border: black 1px solid;
+	overflow-x: auto;
+	padding: 5px 5px 5px 5px;
+}
+
+.textInput {
+	width: 490px;
+	max-width: 490px;
+	min-width: 490px;
+	max-height: 50px;
+}
