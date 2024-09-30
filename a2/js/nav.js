@@ -7,16 +7,16 @@ document.getElementById("logo").onclick = () => {
 sel.onchange = () => {
 	switch (sel.value) {
 		case "Home":
-			window.location.href = "~s4089681/wp/a2/php/pages/index.php";
+			window.location.href = "index.php";
 			break;
 		case "Pets":
-			window.location.href = "~s4089681/wp/a2/php/pages/pets.php";
+			window.location.href = "pets.php";
 			break;
 		case "Add More":
-			window.location.href = "~s4089681/wp/a2/php/pages/add.php";
+			window.location.href = "add.php";
 			break;
 		case "Gallery":
-			window.location.href = "~s4089681/wp/a2/php/pages/gallery.php";
+			window.location.href = "gallery.php";
 			break;
 	}
 };
