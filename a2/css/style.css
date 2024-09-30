@@ -1,20 +1,21 @@
 /* global styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poetsen+One&family=Ysabeau+SC:wght@1..1000&display=swap");
 
 body,
 html {
 	margin: 0;
 	padding: 0;
 	background-color: #fcf9ec;
+	height: 100%;
 }
 
-body {
+#page-container {
+	min-height: 100vh;
 	display: flex;
-	flex-flow: column;
-	height: 100%;
+	flex-direction: column;
 }
 
 * {
@@ -81,6 +82,7 @@ body {
 #main {
 	width: 100%;
 	display: flex;
+	flex: 1;
 	flex-flow: row;
 	justify-content: center;
 }
@@ -91,13 +93,11 @@ body {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-
 }
 
 #ft {
 	background-color: #e57f3d;
-	position: absolute;
-	bottom: 0;
+	padding: 10px 0;
 	width: 100%;
 	height: 60px;
 	display: flex;
@@ -105,14 +105,12 @@ body {
 	flex: 0 1 60px;
 }
 
-
 .ft-item {
 	height: 100%;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 }
-
 
 .ysabeau {
 	font-family: "Ysabeau", sans-serif;
@@ -132,8 +130,6 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
-
-
 
 /* @INFO index.html styling */
 
@@ -162,9 +158,7 @@ body {
 	font-size: 70px;
 	color: #008080;
 	text-wrap: wrap;
-
 }
-
 
 /* pets.html styling */
 
@@ -255,7 +249,7 @@ body {
 
 #clearBtn {
 	color: #008080;
-	border: 1px solid #008080
+	border: 1px solid #008080;
 }
 
 #addPetFormBtn>button>img {
@@ -291,31 +285,29 @@ body {
 #gallery {
 	width: 1200px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
 }
 
 .petThumb {
-	margin: 10px 10px 10px 10px;
 	width: 360px;
 	height: 280px;
+	margin: 10px 10px 10px 10px;
 	border: 1px solid black;
-	border-radius: 25px;
-	display: inline-block;
 	position: relative;
-	z-index: 2;
+
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
 .petThumbName {
 	margin: 0px 0px 5px 0px;
 }
 
-.petThumb:hover {
-	opacity: 50%;
-}
-
 .petThumb>div>img {
 	width: 360px;
+	height: 240px;
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
 }
@@ -331,26 +323,85 @@ body {
 	width: 360px;
 }
 
-.petThumbRow {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
 .petThumbHover {
-	width: 360px;
-	height: 300px;
 	position: absolute;
-	color: black;
-	opacity: 100%;
-	top: 130px;
-	left: 0px;
-	display: none;
-	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
 	justify-content: center;
-	font-size: 25px;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
+
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+
+	/* width: 360px;
+  height: 280px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: black;
+  opacity: 100%;
+  display: none;
+  z-index: 1;
+  justify-content: center;
+  font-size: 25px; */
 }
 
 .petThumb:hover .petThumbHover {
 	display: flex;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+#detailsContent {
+	display: flex;
+	flex-direction: column;
+}
+
+#detailsImage {
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+}
+
+#detailsImage>img {
+	height: 500px;
+}
+
+#detailsInformation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+
+	padding: 20px 0px 00px 0px;
+}
+
+#detailsDescription>* {
+	text-align: center;
+}
+
+#detailsDescription {
+	padding: 20px 0px 20px 0px;
+}
+
+.detailsInformationThumb {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+
+}
+
+.detailsInformationThumb>img {
+	width: 40px;
+	height: 40px;
+	fill: black;
 }
