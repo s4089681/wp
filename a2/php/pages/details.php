@@ -16,26 +16,26 @@ $row = $res->fetch_assoc();
 
 
 
-<div id="detailsContent">
-			<div id="detailsImage">
+	<div id="detailsContent">
+		<div id="detailsImage">
 			<img src="<?php echo $row["image"]; ?>" alt="">
-			</div>
-			<div id="detailsInformation">
-				<span class="detailsInformationThumb"><img src="../../images/assets/alarm.svg" alt="">
-					<p><?php echo $row["age"]; ?> Months</p>
-				</span>
-				<span class="detailsInformationThumb"><img src="../../images/assets/pet.svg" alt="">
-					<p><?php echo $row["type"]; ?></p>
-				</span>
-				<span class="detailsInformationThumb"><img src="../../images/assets/location.svg" alt="">
-					<p><?php echo $row["location"]; ?></p>
-				</span>
-			</div>
-			<div id="detailsDescription">
-			<h1><?php echo $row["petname"]; ?></h1>
-				<p><?php echo $row["description"]; ?></p>
-			</div>
 		</div>
+		<div id="detailsInformation">
+			<span class="detailsInformationThumb"><img src="../../images/assets/alarm.svg" alt="">
+				<a><?php echo $row["age"]; ?> Months</a>
+			</span>
+			<span class="detailsInformationThumb"><img src="../../images/assets/pet.svg" alt="">
+				<a><?php echo $row["type"]; ?></a>
+			</span>
+			<span class="detailsInformationThumb"><img src="../../images/assets/location.svg" alt="">
+				<a><?php echo $row["location"]; ?></a>
+			</span>
+		</div>
+		<div id="detailsDescription">
+			<h1><?php echo $row["petname"]; ?></h1>
+			<p><?php echo $row["description"]; ?></p>
+		</div>
+	</div>
 </main>
 
 <?php include "../includes/footer.php";
