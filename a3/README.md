@@ -1,2 +1,9 @@
 # Assessment 3 - Major Project
-This is the file where you will have to provide a link to your project on the RMIT webserver
+
+## Overview
+> Continue to develop a website for a fictitious pet adoption agency – Pets Victoria. You must create a website that allows registered users to upload, edit and delete pet records for display. Users not registered or logged in can view the site, but not add, edit, or delete pet records. 
+
+## Deployment
+> Project deployed on RMIT Titan webserver, SQL db on RMIT Jacob5
+
+`https://titan.csit.rmit.edu.au/~s4089681/wp/a3/`
