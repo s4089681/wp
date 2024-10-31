@@ -27,8 +27,11 @@
 				<?php
 
 				session_start();
-				$username = "";
-				$username = $_SESSION['username'];
+				if (isset($_SESSION['username'])) {
+					$username = $_SESSION['username'];
+				} else {
+					$username = "";
+				}
 
 				if (isset($_SESSION['userID'])) {
 					echo '	<li class="nav-item">';
